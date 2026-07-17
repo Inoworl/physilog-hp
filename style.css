@@ -196,43 +196,73 @@ p {
   overflow: hidden;
 }
 
-.bg-dots {
+.hero-speedlines {
   position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
 }
 
-.bg-dot {
+.speed-line {
   position: absolute;
-  border-radius: 50%;
-  opacity: 0.5;
-}
-
-.d-fill-primary {
+  right: -10%;
+  height: 14px;
+  border-radius: 8px;
   background: var(--primary-pale);
+  transform: skewX(-24deg);
 }
 
-.d-fill-teal {
+.line-1 {
+  top: 14%;
+  width: 46%;
   background: var(--teal-light);
 }
 
-.d-fill-blue {
-  background: #dbe6fb;
+.line-2 {
+  top: 22%;
+  width: 62%;
 }
 
-.bg-dot.soft {
-  opacity: 0.3;
+.line-3 {
+  top: 29%;
+  width: 34%;
+  background: var(--teal-light);
 }
 
-.pc-only {
-  display: none;
+.speed-block {
+  position: absolute;
+  top: -10%;
+  right: -18%;
+  width: 60%;
+  height: 130%;
+  background: linear-gradient(160deg, var(--primary-pale), var(--teal-light));
+  transform: skewX(-14deg);
+  opacity: 0.6;
 }
 
-@media (min-width: 900px) {
-  .pc-only {
-    display: block;
+@media (max-width: 899px) {
+  .speed-block {
+    width: 90%;
+    right: -40%;
   }
+}
+
+.hero-track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  z-index: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--primary) 0,
+    var(--primary) 24px,
+    var(--teal) 24px,
+    var(--teal) 48px
+  );
+  opacity: 0.9;
 }
 
 .hero-inner {
@@ -382,10 +412,11 @@ p {
 }
 
 .problems-illust-placeholder {
+  position: relative;
   margin-top: 20px;
   width: 160px;
   height: 160px;
-  border-radius: 50%;
+  border-radius: 20px;
   background: var(--primary-light);
   color: var(--primary);
   display: flex;
@@ -393,11 +424,24 @@ p {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  transform: rotate(-6deg);
+  overflow: hidden;
 }
 
 .problems-illust-placeholder svg {
   width: 64px;
   height: 64px;
+  transform: rotate(6deg);
+}
+
+.illust-stripe {
+  position: absolute;
+  bottom: 14px;
+  left: -20px;
+  right: -20px;
+  height: 10px;
+  background: var(--teal);
+  opacity: 0.8;
 }
 
 .problems-list {
@@ -419,6 +463,7 @@ p {
 .problems-num {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
+  font-style: italic;
   color: var(--teal);
   font-size: 1.1rem;
 }
@@ -522,6 +567,7 @@ p {
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
+  font-style: italic;
   font-size: 1.2rem;
   margin-bottom: 16px;
 }
