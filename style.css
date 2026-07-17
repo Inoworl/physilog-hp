@@ -498,19 +498,21 @@ p {
 }
 
 .feature-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
+  transform: rotate(-4deg);
 }
 
-.feature-icon svg {
-  width: 26px;
-  height: 26px;
-  fill: currentColor;
+.feature-icon img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  transform: rotate(4deg);
 }
 
 .icon-primary {
@@ -554,6 +556,40 @@ p {
 
 .how-step {
   text-align: center;
+}
+
+.step-phone {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.step-screen {
+  width: 180px;
+  height: 360px;
+  background: #1a1a2e;
+  border-radius: 26px;
+  padding: 10px;
+  box-shadow: 0 16px 32px rgba(21, 101, 192, 0.15);
+}
+
+.step-screen .placeholder-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  background: var(--bg-cool);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.step-screen img.ph-illust {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  opacity: 0.7;
 }
 
 .how-num {
@@ -627,8 +663,11 @@ p {
 }
 
 .plan-card h3 {
-  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
   font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.02em;
   margin-top: 12px;
 }
 
