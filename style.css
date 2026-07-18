@@ -415,37 +415,11 @@ p {
   font-weight: 700;
 }
 
-.problems-illust-placeholder {
-  position: relative;
+.problems-illust-img {
   margin-top: 20px;
-  width: 160px;
-  height: 160px;
-  border-radius: 20px;
-  background: var(--primary-light);
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  transform: rotate(-6deg);
-  overflow: hidden;
-}
-
-.problems-illust-placeholder svg {
-  width: 64px;
-  height: 64px;
-  transform: rotate(6deg);
-}
-
-.illust-stripe {
-  position: absolute;
-  bottom: 14px;
-  left: -20px;
-  right: -20px;
-  height: 10px;
-  background: var(--teal);
-  opacity: 0.8;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
 }
 
 .problems-list {
