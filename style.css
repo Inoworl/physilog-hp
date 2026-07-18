@@ -498,21 +498,19 @@ p {
 }
 
 .feature-icon {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
-  transform: rotate(-4deg);
 }
 
 .feature-icon img {
-  width: 38px;
-  height: 38px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
-  transform: rotate(4deg);
 }
 
 .icon-primary {
@@ -573,6 +571,19 @@ p {
   box-shadow: 0 16px 32px rgba(21, 101, 192, 0.15);
 }
 
+.step-screen::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  background: var(--bg-cool);
+}
+
+.step-screen:has(.placeholder-content)::before {
+  display: none;
+}
+
 .step-screen .placeholder-content {
   width: 100%;
   height: 100%;
@@ -586,10 +597,9 @@ p {
 }
 
 .step-screen img.ph-illust {
-  width: 44px;
-  height: 44px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
-  opacity: 0.7;
 }
 
 .how-num {
