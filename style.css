@@ -591,8 +591,9 @@ p {
 }
 
 .step-illust {
-  width: 160px;
-  height: 160px;
+  width: auto;
+  height: 280px;
+  max-width: 100%;
   object-fit: contain;
 }
 
