@@ -559,6 +559,8 @@ p {
 .step-phone {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 360px;
   margin-bottom: 24px;
 }
 
@@ -580,25 +582,13 @@ p {
   background: var(--bg-cool);
 }
 
-.step-screen:has(.placeholder-content)::before {
-  display: none;
+.step-illust-only {
+  box-shadow: none;
 }
 
-.step-screen .placeholder-content {
-  width: 100%;
-  height: 100%;
-  border-radius: 18px;
-  background: var(--bg-cool);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary);
-}
-
-.step-screen img.ph-illust {
-  width: 64px;
-  height: 64px;
+.step-illust {
+  width: 160px;
+  height: 160px;
   object-fit: contain;
 }
 
