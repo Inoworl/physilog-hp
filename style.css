@@ -246,6 +246,10 @@ p {
     width: 90%;
     right: -40%;
   }
+
+  .hero-visual {
+    margin-top: 56px;
+  }
 }
 
 .hero-track {
